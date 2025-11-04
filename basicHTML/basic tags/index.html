@@ -1,252 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>List Assignments</title>
-    <meta charset="UTF-8">
-</head>
-<body >
-    
-    <h1>Task 1</h1>
-    <h3>Disc bullets list:</h3>
-    <ul type="disc">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ul>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <label for="fullName">Full name :</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="Enter Your Name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="add your email"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Choose your Password"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="confirmpassword">Confirm Password :</label>
+        <input
+          type="password"
+          name="confirmpassword"
+          id="confirmpassword"
+          placeholder="Confirm Password"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone :</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="Mobile Number"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date of Birth :</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
 
-    <h3>Circle bullets list:</h3>
-    <ul type="circle">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ul>
+      <br />
+      <div>
+        <label for="tob">Time of Birth :</label>
+        <input type="time" name="tob" id="tob" />
+      </div>
 
-    <h3>Square bullets list:</h3>
-    <ul type="square">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ul>
-<h3>Numbered list:</h3>
-    <ol type="1">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ol>
+      <br />
+      <div>
+        <label for="timedate">time and Date of Birth :</label>
+        <input type="datetime-local" name="timedate" id="timedate" />
+      </div>
+      <br />
+      <div>
+        <label for="resume">Resume :</label>
+        <input type="file" name="resume" id="resume" />
+      </div>
+      <br />
+      <div>
+        <label for="volume">volume</label>
+        <input
+          type="range"
+          name="volume"
+          id="volume"
+          min="0"
+          max="10"
+          value="2"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="genderMale" value="male" />
+        <span>Male</span>
+        <input type="radio" name="gender" id="genderFemale" value="female" />
+        <span>Female</span>
+        <input type="radio" name="gender" id="genderOther" value="other" />
+        <span>Other</span>
+      </div>
 
-    <h3>Letters list:</h3>
-    <ol type="A">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ol>
+      <br />
 
-    <h3>Lowercase letters list:</h3>
-    <ol type="a">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ol>
+      <div>
+        <label for="qualification">Qualification</label>
+        <select name="qualification" id="qualification">
+          <option value="">--Select--</option>
+          <option value="highschool">High School</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="master">Master's Degree</option>
+          <option value="phd">PhD</option>
+        </select>
+      </div>
 
-    <h3>Roman numbers list:</h3>
-    <ol type="I">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ol>
+      <br />
 
-    <h3>Lowercase Roman numbers list:</h3>
-    <ol type="i">
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Lemons</li>
-        <li>Oranges</li>
-    </ol>
+      <div>
+        <label for="Skill">Skill</label>
+        <input type="checkbox" name="Skill" id="Skill1" value="HTML" />
+        <span>HTML</span>
+        <input type="checkbox" name="Skill" id="Skill2" value="CSS" />
+        <span>CSS</span>
+        <input type="checkbox" name="Skill" id="Skill3" value="JavaScript" />
+        <span>JavaScript</span>
+      </div>
 
-    <h2>The following table:</h2>
-    <h3>Quiz</h3>
+      <br />
+      <div>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" placeholder="Enter your address">
+        </textarea>
+      </div>
 
-    <ol>
-        <li>HTML is an?
-            <ol type="i">
-                <li>Markup language</li>
-                <li>Programming language</li>
-                <li>none of these</li>
-            </ol>
-        </li>
-        <li>CSS is used for
-            <ol type="i">
-                <li>Styling</li>
-                <li>scripting</li>
-                <li>none of these</li>
-            </ol>
-        </li>
-        <li>Which of the following is dynamic from of HTML?
-            <ol type="i">
-                <li>XML</li>
-                <li>DHTML</li>
-                <li>none of these</li>
-            </ol>
-        </li>
-        <li>Which of the following can be linked with HTML and CSS ?
-            <ol type="i">
-                <li>javascript</li>
-                <li>C++</li>
-                <li>none of these</li>
-            </ol>
-        </li>
-    </ol>
 
-    
-    <h2>FRUITS & VEGETABLES</h2>
-    <ol type="A">
-        <li>Vegetables
-            <ul type="disc">
-                <li>Onion</li>
-                <li>Tomato</li>
-                <li>Radish</li>
-                <li>Potato</li>
-                <li>Carrot</li>
-            </ul>
-        </li>
-        <li>Fruits
-            <ul type="disc">
-                <li>Apple</li>
-                <li>Banana</li>
-                <li>Water-Melon</li>
-                <li>Mango</li>
-                <li>Grapes</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h2>NEWSPAPERS & MAGAZINES</h2>
-    
-    Newspaper
-    <ol start="5"> 
-        <li>The Times of India</li>
-        <li>Hindustan Times</li>
-        <li>Navbharat Times</li>
-        <li>Punjab Kesari</li>
-        <li>Dainik Jagran</li>
-    </ol>
-    <hr>
-
-    Magazine
-    <ol type="i">
-        <li>Business Times</li>
-        <li>The Week</li>
-        <li>India Today</li>
-        <li>Harvard Business Review</li>
-        <li>Computer World</li>
-    </ol>
-    <hr>
-   
-    <h1>Task 5 - Learning Web Development</h1>
-     <h2>Learning Web Development</h2>
-    
-    <ol type="I">
-        <li>Background Skills
-            <ol type="A">
-                <li>Unix Commands</li>
-                <li>Vim Text Editor</li>
-            </ol>
-        </li>
-        <li>HTML
-            <ol type="A">
-                <li>Minimal Page</li>
-                <li>Headings</li>
-                <li>Tags</li>
-                <li>Lists
-                    <ol type="i">
-                        <li>Unordered</li>
-                        <li>Ordered</li>
-                        <li>Definition</li>
-                        <li>Nested</li>
-                    </ol>
-                </li>
-                <li>Links
-                    <ol type="i">
-                        <li>Absolute</li>
-                        <li>Relative</li>
-                    </ol>
-                </li>
-                <li>Images</li>
-            </ol>
-        </li>
-        <li>CSS
-            <ol type="A">
-                <li>Anatomy</li>
-                <li>Basic Selectors
-                    <ol type="i">
-                        <li>Element</li>
-                        <li>Class</li>
-                        <li>ID</li>
-                        <li>Group</li>
-                    </ol>
-                </li>
-                <li>The DOM</li>
-                <li>Advanced Selectors</li>
-                <li>Box Model</li>
-            </ol>
-        </li>
-        <li>Programming
-            <ol type="A">
-                <li>Python</li>
-                <li>JavaScript</li>
-            </ol>
-        </li>
-        <li>Database
-            <ol type="A">
-                <li>Flat File</li>
-                <li>Relational</li>
-            </ol>
-        </li>
-    </ol>
-    
-    <h1>Task 6</h1>
-    <h2>List Example</h2>
-    <ol>
-      <li>List Item 1
-        <ul>
-          <li>Nested item 1.1</li>
-          <li>Nested item 1.2</li>
-        </ul>
-      </li>
-      <li>List Item 2
-        <ol type="i">
-          <li>Nested item 2.1</li>
-          <li>Nested item 2.2
-            <ul>
-              <li>Nested item 2.2.1</li>
-              <li>Nested item 2.2.2
-                <ul>
-                  <li>Nested item 2.2.2.1</li>
-                  <li>Nested item 2.2.2.2</li>
-                </ul>
-              </li>
-              <li>Nested item 2.2.3</li>
-            </ul>
-          </li>
-          <li>Nested item 2.3</li>
-        </ol>
-      </li>
-      <li>List Item 3</li>
-    </ol>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-    <p>COMP 376 Introduction to Game Programming</p>
-    <p>Soen287 Web Programming</p>
-    <p>This is a testo for Assignment 1.</p>
-</body>
+      <br>
+      <button>Submit</button>
+    </div>
+  </body>
 </html>
