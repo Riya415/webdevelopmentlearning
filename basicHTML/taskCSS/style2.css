@@ -2,14 +2,13 @@ body {
   background-color: #3b6cf5;
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
 .container {
   display: flex;
-  justify-content: center;
+ 
 }
 
 .box {
@@ -79,5 +78,4 @@ body {
 
 .switch-text a {
   color: #3b6cf5;
-  text-decoration: none;
 }

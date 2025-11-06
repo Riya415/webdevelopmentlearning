@@ -1,8 +1,6 @@
 body {
   background-color: #3b6cf5;
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
 }
@@ -52,7 +50,6 @@ body {
 
 .options {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
   font-size: 13px;
