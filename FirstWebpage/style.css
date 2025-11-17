@@ -18,11 +18,7 @@
   display: flex;
   justify-content: space-between;
   
-  border:1px solid whitesmoke;
-
-
-
-
+  border:1px solid whitesmoke
    
 }
 #subnav{
@@ -183,7 +179,6 @@ img{
   
 }
 
-/* ===== GLOBAL ===== */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9fafb;
@@ -325,9 +320,6 @@ textarea:focus {
 .btn:hover {
   background-color: #000;
   transform: translateY(-2px);
-}
-
-    
 }
 #inner8{
     background-color: black;
