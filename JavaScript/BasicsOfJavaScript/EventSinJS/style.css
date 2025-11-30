@@ -1,0 +1,34 @@
+/* *{
+    background-color:#000;
+} */
+
+
+#bulb{
+    
+    padding: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 10px;
+    background-color: #fff;
+
+}
+
+#smartBulb{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+     border-radius: 50%;
+
+}
+.on{
+    background-color: yellow;
+}
