@@ -26,18 +26,193 @@
     </header>
     <main>
       <div class="mx-3 border-primary d-flex gap-3" id="content">
-        <div class="border border-danger w-25">SideMenu</div>
-        <div class="border border-success w-75 d-flex justify-content-center align-items-center" id="WorkSpace">
+        <div class="border border-danger w-25 p-3" id="property">
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="Brightness " class="pb-3">Brightness</label>
+            <div class="w-100 ">
+              <input
+                type="range"
+                name="Brightness"
+                id="Brightness"
+                min="0"
+                max="100"
+                value="50"
+                onchange="changeBrightness()"
+                class="form-range p-3"
+              />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="Contrast " class="pb-3">Contrast</label>
+            <div class="w-100">
+                <input
+              type="range"
+              name="Contrast"
+              id="Contrast"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeContrast()"
+              class="form-range p-3"
+            />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="GrayScale " class="pb-3">GrayScale</label>
+            <div class="w-100">
+                <input
+              type="range"
+              name="GrayScale"
+              id="GrayScale"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeGrayScale()"
+              class="form-range p-3"
+            />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="Sepia " class="pb-3">Sepia</label>
+            <div class="w-100">
+                <input
+              type="range"
+              name="Sepia"
+              id="Sepia"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeSepia()"
+              class="form-range p-3"
+            />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+
+
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="Saturate " class="pb-3">Saturate</label>
+            <div class="w-100">
+                <input
+              type="range"
+              name="Saturate"
+              id="Saturate"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeSaturate()"
+              class="form-range p-3"
+            />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="Blur " class="pb-3">Blur</label>
+            <div class="w-100">
+                <input
+              type="range"
+              name="Blur"
+              id="Blur"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeBlur()"
+              class="form-range p-3"
+            />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column align-items-center border rounded shadow mb-3"
+          >
+            <label for="Invert " class="pb-3">Invert</label>
+            <div class="w-100">
+                <input
+              type="range"
+              name="Invert"
+              id="Invert"
+              min="0"
+              max="100"
+              value="50"
+              onchange="changeInvert()"
+              class="form-range p-3"
+            />
+            </div>
+            <div class="p-3 d-flex justify-content-between w-100">
+              <span>0</span>
+              <span>100</span>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-outline-success " > <i class="bi bi-box-arrow-down"></i> Download </button>
+            <button class="btn btn-outline-warning" > <i class="bi bi-arrow-clockwise"></i> Reset </button>
+            <button class="btn btn-outline-secondary " > <i class="bi bi-arrow-clockwise"></i> Uplod Another Image </button>
+
+          </div>
+
+           
+        </div>
+        <div
+          class="border border-success w-75 d-flex justify-content-center align-items-center"
+          id="WorkSpace"
+        >
           <img
             src=""
             alt="WorkImage"
             id="image"
             class="border object-fit-contain"
           />
-          <label class="btn btn-outline-primary" for="upload">
+          <label class="btn btn-outline-primary" for="Upload" id="UploadLabel">
             <i class="bi bi-camera"></i> Upload Image
           </label>
-          <input type="file" name="Upload" id="Upload" class="d-noneh"/>
+          <input
+            type="file"
+            name="Upload"
+            id="Upload"
+            class="d-none"
+            onchange="uploadimage()"
+            accept="image/*"
+          />
         </div>
       </div>
     </main>
@@ -49,6 +224,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
